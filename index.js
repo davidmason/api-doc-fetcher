@@ -32,7 +32,7 @@ if (!(section in sections)) {
     var $ = cheerio.load(data);
 
     // get <p> after #Summary
-    $(sections[section]).next().map(function (i, element) {
+    $(sections[section]).nextUntil('h2').map(function (i, element) {
       console.log($(element).text());
     });
 
