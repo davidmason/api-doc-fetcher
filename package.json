@@ -1,0 +1,19 @@
+{
+  "name": "api-doc-fetcher",
+  "version": "0.0.0",
+  "description": "Command line program to fetch pieces of API documentation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidmason/api-doc-fetcher.git"
+  },
+  "author": "drdmason@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidmason/api-doc-fetcher/issues"
+  },
+  "homepage": "https://github.com/davidmason/api-doc-fetcher"
+}
