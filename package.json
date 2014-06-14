@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/davidmason/api-doc-fetcher",
   "dependencies": {
-    "cheerio": "^0.17.0"
+    "cheerio": "^0.17.0",
+    "request": "^2.36.0"
   }
 }
