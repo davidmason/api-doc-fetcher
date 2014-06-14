@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/davidmason/api-doc-fetcher/issues"
   },
-  "homepage": "https://github.com/davidmason/api-doc-fetcher"
+  "homepage": "https://github.com/davidmason/api-doc-fetcher",
+  "dependencies": {
+    "cheerio": "^0.17.0"
+  }
 }
