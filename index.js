@@ -1,22 +1,31 @@
-var mozdocs = require('./moz-docs'),
+var getDocsFromMDN = require('./moz-docs'),
     getSection = require('./get-section');
-
-var section = process.argv[2];
-
-// TODO output help if there are no arguments,
-//      or if argument is 'help'
 
 var sections = {
   'summary': '#Summary',
   'syntax': '#Syntax',
   'desc': '#Description'
 };
+var validSections = Object.keys(sections).join(', ');
 
-if (!(section in sections)) {
-  console.error('invalid section: ' + section);
-} else {
-  mozdocs(section, handleDocument);
+var args = process.argv.slice(2);
+
+if (args.length === 0 || args[0] === 'help') {
+  console.log('Usage: node index [section]\n');
+  console.log('  Displays documentation section for Math.min().\n');
+  console.log('  section (optional): which section to show');
+  console.log('    valid values: ' + validSections);
+  process.exit();
 }
+
+var section = args[0];
+if (!(section in sections)) {
+  console.error('Invalid section: ' + section);
+  console.log('  Valid sections are: ' + validSections);
+  process.exit(1);
+}
+
+getDocsFromMDN(section, handleDocument);
 
 function handleDocument(err, doc) {
   if (err) {
