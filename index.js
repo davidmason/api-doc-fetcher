@@ -1,10 +1,10 @@
 var getDocsFromMDN = require('./moz-docs'),
-    getSection = require('./get-section');
+    extractText = require('./extract-text');
 
 var sections = {
-  'summary': '#Summary',
-  'syntax': '#Syntax',
-  'desc': '#Description'
+  'summary': 'Summary',
+  'syntax': 'Syntax',
+  'desc': 'Description'
 };
 var validSections = Object.keys(sections).join(', ');
 
@@ -35,13 +35,13 @@ if (args.length > 1) {
 }
 section = section || 'summary';
 
-getDocsFromMDN(page, section, handleDocument);
+getDocsFromMDN(page, sections[section], handleDocument);
 
 function handleDocument(err, doc) {
   if (err) {
     console.log('got an error: ' + err);
   } else {
-    getSection(sections[section], doc, function (text) {
+    extractText(doc, function (text) {
       console.log(text);
     });
   }

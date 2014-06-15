@@ -7,9 +7,10 @@ module.exports = function (page, section, callback) {
   var pageAddress = page.replace('.', '/')
                  .replace('(', '')
                  .replace(')', '')
-  var url = baseUrl + pageAddress;
+  var pageUrl = baseUrl + pageAddress;
+  var sectionUrl = pageUrl + '?raw&section=' + section;
 
-  request(url, function (error, response, body) {
+  request(sectionUrl, function (error, response, body) {
     if (error) {
       callback(error);
     } else if (!error && response.statusCode == 200) {
