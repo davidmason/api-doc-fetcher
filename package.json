@@ -1,21 +1,25 @@
 {
-  "name": "api-doc-fetcher",
+  "name": "waht",
   "version": "0.0.0",
   "description": "Command line program to fetch pieces of API documentation.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "waht": "bin/waht.js"
+  },
+  "preferGlobal": "true",
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidmason/api-doc-fetcher.git"
+    "url": "https://github.com/davidmason/waht.git"
   },
   "author": "drdmason@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/davidmason/api-doc-fetcher/issues"
+    "url": "https://github.com/davidmason/waht/issues"
   },
-  "homepage": "https://github.com/davidmason/api-doc-fetcher",
+  "homepage": "https://github.com/davidmason/waht",
   "dependencies": {
     "cheerio": "^0.17.0",
     "request": "^2.36.0"
