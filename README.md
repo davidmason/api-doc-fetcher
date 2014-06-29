@@ -19,9 +19,9 @@ Requires [Node.js](http://nodejs.org/).
 
 e.g.:
 
-`waht Math.min() syntax`
+`waht Math.min() syntax` or `waht Math.min syntax`
 
-outputs
+will output:
 
     Syntax
     Math.min([value1[,value2, ...]])
