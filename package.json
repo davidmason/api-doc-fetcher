@@ -4,7 +4,7 @@
   "description": "Command line program to fetch pieces of API documentation.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha lib/**/test.js"
   },
   "bin": {
     "waht": "bin/waht.js"
@@ -27,5 +27,8 @@
   "dependencies": {
     "cheerio": ">=0.17.0",
     "request": "^2.36.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.1"
   }
 }
