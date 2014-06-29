@@ -2,6 +2,8 @@
 
 Displays a documentation section from the given docs page. Currently only supports core JavaScript object documentation on MDN.
 
+You can see this project being built in the [Coding from Scratch video series](https://www.youtube.com/playlist?list=PLQGHX1yGAOq1NTbrkhVNnLdylBf6ISik2).
+
 ## Dependencies
 
 Requires [Node.js](http://nodejs.org/).
