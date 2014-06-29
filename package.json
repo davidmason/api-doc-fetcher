@@ -1,6 +1,6 @@
 {
   "name": "waht",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "description": "Command line program to fetch pieces of API documentation.",
   "main": "index.js",
   "scripts": {
@@ -14,14 +14,15 @@
     "type": "git",
     "url": "https://github.com/davidmason/waht.git"
   },
-  "author": "drdmason@gmail.com",
+  "author": "https://github.com/davidmason",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/davidmason/waht/issues"
   },
   "homepage": "https://github.com/davidmason/waht",
+  "engines": ">=0.10.28",
   "dependencies": {
-    "cheerio": "^0.17.0",
+    "cheerio": ">=0.17.0",
     "request": "^2.36.0"
   }
 }
